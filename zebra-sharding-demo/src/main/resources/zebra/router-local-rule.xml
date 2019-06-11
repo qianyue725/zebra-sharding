@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<router-rule>
+    <table-shard-rule table="t_user_" generatedPK="id">
+        <shard-dimension dbRule="0/crc32(#uid#)"
+                         dbIndexes="db0"
+                         tbRule="(crc32(#uid#)/3).toLong()%3"
+                         tbSuffix="alldb:[0,2]"
+                         isMaster="true">
+        </shard-dimension>
+    </table-shard-rule>
+</router-rule>
