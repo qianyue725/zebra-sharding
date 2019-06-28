@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>zebra-sharding-spring-boot-starter</artifactId>
+    <artifactId>zebra-multi-datasource-spring-boot-starter</artifactId>
 
     <dependencies>
         <!-- Compile dependencies -->
@@ -19,8 +19,13 @@
         </dependency>
 
         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.dianping.zebra</groupId>
-            <artifactId>zebra-client</artifactId>
+            <artifactId>zebra-dao</artifactId>
             <exclusions>
                 <exclusion>
                     <groupId>log4j</groupId>
