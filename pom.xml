@@ -24,7 +24,7 @@
         <zebra-dao.version>0.2.1</zebra-dao.version>
         <mybatis.version>3.5.1</mybatis.version>
         <mybatis-spring.version>2.0.1</mybatis-spring.version>
-        <guava.version>27.0.1-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
     </properties>
 
 
